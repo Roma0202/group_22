@@ -1,0 +1,136 @@
+a = str('5')
+b = str('7')
+c = int('4')
+d = int('2')
+e = int('3')
+f = int('9')
+g = float('5.2')
+h = float('4.8')
+i = float('1.1')
+print(c+d!=e+f)
+print(c+d!=f-e)
+print(c+d==f-e)
+print(c+d>e+f)
+print(c+d<e+f)
+print(c+d>=f-e)
+print(c+d<=e+f)
+print(c+d<f)
+print(c+d<f)
+print(c+d==f)
+print(f/e>=d)
+print(f/e!=d)
+print(c*d>=f-e)
+print(c*d==f-e)
+print(c*d!=f+e)
+True
+False
+True
+False
+True
+True
+True
+True
+True
+False
+True
+True
+True
+False
+True
+
+a = str('5')
+b = str('7')
+c = int('4')
+d = int('2')
+e = int('3')
+f = int('9')
+g = float('5.2')
+h = float('4.8')
+i = float('1.1')
+print(g+i<h)
+print(g+i>h)
+print(g+i!=h)
+print(g+i>=h)
+print(g+i<=h)
+print(g+h<i**10)
+print(g+h<i**20)
+print(g+h<i**100)
+print(g+h<i*10)
+False
+True
+True
+True
+False
+False
+False
+True
+True
+
+7)x = int(input("Вы ввели число:"))
+print(f"{x}")
+
+Вы ввели число:30
+30
+>>> 
+
+8)import random 
+x = int(random.randint(1, 100))
+print(x)
+a = int(input("Вы ввели число:"))
+print(f"{a}")
+y = (a>=x)
+print(y)
+
+============== RESTART: C:/QA_22_roman/python2/1.py ==============
+24
+Вы ввели число:23
+23
+False
+>>> 
+============== RESTART: C:/QA_22_roman/python2/1.py ==============
+17
+Вы ввели число:18
+18
+True
+>>> 
+============== RESTART: C:/QA_22_roman/python2/1.py ==============
+24
+Вы ввели число:24
+24
+True
+>>> 
+
+9)import random 
+x = int(random.randint(1, 50))
+z = int(random.randint(51, 100))
+print(x,z)
+a = int(input("Вы ввели число:"))
+print(f"{a}")
+y = (a>=x) and (a<=z)
+print(y)
+
+================ RESTART: C:/QA_22_roman/python2/x.py ===============
+28 54
+Вы ввели число:35
+35
+True
+>>> 
+================ RESTART: C:/QA_22_roman/python2/x.py ===============
+47 98
+Вы ввели число:67
+67
+True
+>>> 
+================ RESTART: C:/QA_22_roman/python2/x.py ===============
+32 93
+Вы ввели число:94
+94
+False
+>>> 
+================ RESTART: C:/QA_22_roman/python2/x.py ===============
+16 87
+Вы ввели число:15
+15
+False
+
+
