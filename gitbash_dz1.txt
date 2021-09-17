@@ -1,0 +1,104 @@
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d
+1)$ pwd
+2)$ mkdir QA_courses
+3)$ cd QA_courses
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses
+4) $ mkdir RomanyaQA1 RomanyaQA2 RomanyaQA3
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses
+5)$ cd RomanyaQA1
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses/RomanyaQA1
+6)$ touch roma1.txt roma2.txt roma3.txt roma4.json roma5.json
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses/RomanyaQA1
+8)$ ls /d/QA_courses/RomanyaQA1
+roma1.txt  roma2.txt  roma3.txt  roma4.json  roma5.json
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses/RomanyaQA1
+9)$ cat roma3.txt
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses/RomanyaQA1
+10)$ echo "Hi, my name is Roman Aleksandrovich, i'm from Tyumen" > roma3.txt
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses/RomanyaQA1
+11)$ :w
+bash: :w: command not found
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses/RomanyaQA1
+$ vim roma3.txt
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses/RomanyaQA1
+12)$ cd .. /d/QA_courses
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses
+13)  пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /
+$ mv /d/QA_courses/RomanyaQA2/RomanyaQA1/roma2.txt /d/QA_courses/RomanyaQA2
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /
+$ mv /d/QA_courses/RomanyaQA2/RomanyaQA1/roma3.txt /d/QA_courses/RomanyaQA2
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /
+14)  пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /
+$ cp /d/QA_courses/RomanyaQA1/roma1.txt /d/QA_courses/RomanyaQA3
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /
+$ cp /d/QA_courses/RomanyaQA1/roma4.json /d/QA_courses/RomanyaQA3
+
+15) пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses
+$ find . -name "roma3.txt"
+./RomanyaQA2/roma3.txt
+
+16) $ grep name /d/QA_courses/RomanyaQA2/roma3.txt
+Hi, my name is Roman Aleksandrovich, i'm from Tyumen
+
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses
+$
+17) $ head -3 roma3.txt
+18) $ tail -3 roma3.txt
+19) $ less roma3.txt
+
+
+
+
+
+
+
+
+Hi, my name is Roman Aleksandrovich, i'm from Tyumen
+/d/QA_courses/RomanyaQA2/roma3.txt (END)
+
+
+20) пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses
+$ date
+Thu Sep  2 01:06:20     2021
+
+
+ЗАДАНИЕ. отправить http запрос 
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d/QA_courses
+$ curl -p 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000'
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Dload  Upload   Total   Spent    Left  Speed
+100   185  100   185    0     0   1035      0 --:--:-- --:--:-- --:--:--  1039{"age":"32","family":{"children":[["Alex",24],["Kate",12]],"pets":{"cat":{"age":3,"name":"Sunny"},"dog":{"age":4,"name":"Luky"}},"u_salary_1_5_year":4000},"name":"Vadim","salary":1000}
+
+
+
+
+ЗАДАНИЕ. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+пользователь@▒▒▒▒▒▒▒▒▒▒▒▒-▒▒ MINGW64 /d
+$ mkdir qa22 && cd qa22 && mkdir papka1 papka2 papka3 && cd papka1 && touch r1.txt r2.txt r3.txt r4.json r5.json && ls /d/qa22/papka1 r1.txt r2.txt r3.txt r4.json r5.json && mv /d/qa22/papka1/r1.txt r5.json /d/qa22/papka2
+r1.txt  r2.txt  r3.txt  r4.json  r5.json
+
+/d/qa22/papka1:
+r1.txt  r2.txt  r3.txt  r4.json  r5.json
+
+$ #!/bin/bash
+mkdir qa22
+cd qa22
+mkdir papka1 papka2 papka3
+cd papka1
+touch r1.txt r2.txt r3.txt r4.json r5.json
+ls /d/qa22/papka1 r1.txt r2.txt r3.txt r4.json r5.json
+mv /d/qa22/papka1/r1.txt r5.json /d/qa22/papka2
+r1.txt  r2.txt  r3.txt  r4.json  r5.json
+
