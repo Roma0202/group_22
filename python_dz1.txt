@@ -1,0 +1,51 @@
+1)name = str('567')
+print(name)
+print(type(name))
+2)name = int('5')
+print(name)
+print(type(name))
+3)name = float('14.3')
+print(name)
+print(type(name))
+4)size = 9
+name = bytes(size)
+print(name)
+5)name = list[35, 42, 54]
+print(name)
+print(type(name))
+6)name = tuple('do did done')
+print(name)
+7)name = set['white', 'black', 'brown', 'blue']
+print(name)
+print(type(name))
+8)name = frozenset([2, 6, 9, 13])
+print(name)
+print(type(name))
+9)d = dict(a = 'five', b = 'seven')
+print(d)
+print(type(d))
+11)a = str('hello')
+b = str('roman')
+c = a+b
+print(c)
+12)a = 600*2
+b = 800+50
+c = a + b
+print(c)
+13)a = 600*2
+b = 800+50
+c = a/b
+print(c)
+14)a = 600*2
+b = 800+50
+c = a*b
+print(c)
+15)a = 7.3+3.2
+b = 4*2
+c = a//b
+print(c)
+16)a = 7.3+3.2
+b = 4*2
+c = a%b
+print(c)
+
